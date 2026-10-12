@@ -1,99 +1,212 @@
+  
+/* 1. Global settings */
+* {
+    box-sizing: border-box;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of an aspiring software tester learning manual testing and software quality assurance.">
-    <title>My Portfolio | Aspiring Software Tester</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+html {
+    scroll-behavior: smooth;
+}
 
-    <header>
-        <strong>MyPortfolio</strong>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+body {
+    margin: 0;
+    background: #0b1120;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
 
-    <main>
-        <section id="home">
-            <p class="eyebrow">ASPIRING SOFTWARE TESTER</p>
-            <h1>Hello, I'm <span>Your Name</span></h1>
-            <p>
-                I am learning software testing and working towards
-                building reliable, user-friendly digital experiences.
-            </p>
-            <a class="button" href="#projects">Explore My Projects</a>
-        </section>
+a {
+    transition: color 0.2s ease, background 0.2s ease;
+}
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am an aspiring software tester at the beginning of my
-                learning journey. I want to understand how applications work,
-                identify defects, and help improve software quality.
-            </p>
-            <p>
-                My current focus is learning manual testing, test cases,
-                bug reporting, and real-world testing workflows.
-            </p>
-        </section>
+/* 2. Navigation */
+header {
+    padding: 20px 8%;
+    background: #111827;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    border-bottom: 1px solid #263449;
+}
 
-        <section id="skills">
-            <h2>Skills I'm Learning</h2>
-            <div class="skill-list">
-                <span>Manual Testing</span>
-                <span>Test Cases</span>
-                <span>Bug Reporting</span>
-                <span>SDLC &amp; STLC</span>
-                <span>HTML &amp; CSS Basics</span>
-            </div>
-        </section>
+header strong {
+    color: #38bdf8;
+    font-size: 22px;
+}
 
-        <section id="projects">
-            <h2>My Learning Projects</h2>
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
 
-            <article>
-                <h3>Website Testing Checklist</h3>
-                <p>
-                    A learning project to test navigation, links,
-                    forms, and page behavior.
-                </p>
-                <p class="status">Status: Learning project</p>
-            </article>
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+}
 
-            <article>
-                <h3>Sample Bug Reports</h3>
-                <p>
-                    A planned collection of sample defects with
-                    reproduction steps and expected results.
-                </p>
-                <p class="status">Status: Learning project</p>
-            </article>
-        </section>
+nav a:hover {
+    color: #38bdf8;
+}
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>
-                I'm building my skills in software testing and
-                welcome opportunities to learn.
-            </p>
-            <p>
-                My professional email and LinkedIn profile will be
-                added here later.
-            </p>
-        </section>
-    </main>
+/* 3. Page sections */
+section {
+    padding: 65px 8%;
+    scroll-margin-top: 20px;
+}
 
-    <footer>
-        <p>&copy; 2026 My Portfolio. Built while learning HTML and CSS.</p>
-    </footer>
+h2 {
+    color: #38bdf8;
+    font-size: 30px;
+    margin-top: 0;
+}
 
-</body>
-</html>
+p {
+    color: #cbd5e1;
+}
+
+/* 4. Home section */
+#home {
+    min-height: 65vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .eyebrow {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#home h1 {
+    font-size: clamp(34px, 6vw, 60px);
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
+#home h1 span {
+    color: #38bdf8;
+}
+
+#home > p:not(.eyebrow) {
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+.button {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+}
+
+/* 5. About and projects backgrounds */
+#about,
+#projects {
+    background: #111827;
+    border-top: 1px solid #1f2937;
+}
+
+/* 6. Skills */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-list span {
+    background: #1e293b;
+    color: #bae6fd;
+    border: 1px solid #334155;
+    padding: 10px 16px;
+    border-radius: 8px;
+}
+
+/* 7. Project cards */
+article {
+    background: #1e293b;
+    border: 1px solid #334155;
+    padding: 24px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+article h3 {
+    color: #f8fafc;
+    margin-top: 0;
+}
+
+.status {
+    color: #38bdf8;
+    font-size: 14px;
+}
+
+/* 8. Contact and footer */
+#contact {
+    text-align: center;
+}
+
+footer {
+    padding: 24px;
+    text-align: center;
+    background: #080d18;
+    border-top: 1px solid #263449;
+}
+
+footer p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* 9. Mobile responsive design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px 6%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+
+    #home {
+        min-height: auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    article {
+        padding: 18px;
+    }
+}
