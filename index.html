@@ -1,16 +1,87 @@
 
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>मेरी पहली वेबसाइट</title>
+    <title>My Portfolio | Aspiring Software Tester</title>
 </head>
-<body>
-    <h1>नमस्ते! मेरी पहली वेबसाइट में आपका स्वागत है।</h1>
-    <p>मैं Shubham हूँ और मैं वेबसाइट बनाना सीख रहा हूँ।</p>
-    <button onclick="alert('बहुत बढ़िया! आपकी वेबसाइट काम कर रही है।')">
-        यहाँ क्लिक करें
-    </button>
+<body style="margin:0; background:#0b1120; color:#e5e7eb; font-family:Arial,sans-serif; line-height:1.7;">
+
+    <header style="padding:20px 8%; background:#111827; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+        <strong style="color:#38bdf8; font-size:22px;">MyPortfolio</strong>
+        <nav>
+            <a href="#home" style="color:white; margin:8px; text-decoration:none;">Home</a>
+            <a href="#about" style="color:white; margin:8px; text-decoration:none;">About</a>
+            <a href="#skills" style="color:white; margin:8px; text-decoration:none;">Skills</a>
+            <a href="#projects" style="color:white; margin:8px; text-decoration:none;">Projects</a>
+            <a href="#contact" style="color:white; margin:8px; text-decoration:none;">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" style="padding:90px 8%; text-align:center;">
+            <p style="color:#38bdf8; letter-spacing:2px;">ASPIRING SOFTWARE TESTER</p>
+            <h1 style="font-size:clamp(32px,6vw,56px); margin:10px 0;">
+                Hello, I'm <span style="color:#38bdf8;">Your Name</span>
+            </h1>
+            <p style="max-width:650px; margin:20px auto; color:#cbd5e1;">
+                I am learning software testing and working towards building
+                reliable, user-friendly digital experiences.
+            </p>
+            <a href="#projects" style="display:inline-block; background:#0284c7; color:white; padding:12px 24px; border-radius:8px; text-decoration:none;">
+                Explore My Projects
+            </a>
+        </section>
+
+        <section id="about" style="padding:55px 8%; background:#111827;">
+            <h2>About Me</h2>
+            <p>
+                I am an aspiring software tester at the beginning of my
+                learning journey. I want to understand how applications work,
+                identify defects, and help improve software quality.
+            </p>
+            <p>
+                My current focus is learning manual testing, test cases,
+                bug reporting, and real-world testing workflows.
+            </p>
+        </section>
+
+        <section id="skills" style="padding:55px 8%;">
+            <h2>Skills I'm Learning</h2>
+            <div style="display:flex; flex-wrap:wrap; gap:12px;">
+                <span style="background:#1e293b; padding:10px 16px; border-radius:8px;">Manual Testing</span>
+                <span style="background:#1e293b; padding:10px 16px; border-radius:8px;">Test Cases</span>
+                <span style="background:#1e293b; padding:10px 16px; border-radius:8px;">Bug Reporting</span>
+                <span style="background:#1e293b; padding:10px 16px; border-radius:8px;">SDLC & STLC</span>
+                <span style="background:#1e293b; padding:10px 16px; border-radius:8px;">HTML & CSS Basics</span>
+            </div>
+        </section>
+
+        <section id="projects" style="padding:55px 8%; background:#111827;">
+            <h2>My Learning Projects</h2>
+            <article style="background:#1e293b; padding:22px; border-radius:12px; margin:20px 0;">
+                <h3>Website Testing Checklist</h3>
+                <p>A planned project to test navigation, links, forms, and page behavior.</p>
+                <p style="color:#38bdf8;">Status: Learning project</p>
+            </article>
+            <article style="background:#1e293b; padding:22px; border-radius:12px;">
+                <h3>Sample Bug Reports</h3>
+                <p>A planned collection of sample defects with steps to reproduce and expected results.</p>
+                <p style="color:#38bdf8;">Status: Learning project</p>
+            </article>
+        </section>
+
+        <section id="contact" style="padding:55px 8%; text-align:center;">
+            <h2>Contact</h2>
+            <p>I'm building my skills in software testing and welcome opportunities to learn.</p>
+            <p>You can add your professional email or LinkedIn profile here later.</p>
+        </section>
+    </main>
+
+    <footer style="padding:24px; text-align:center; background:#111827; color:#94a3b8;">
+        <p>&copy; 2026 My Portfolio. Built while learning HTML.</p>
+    </footer>
+
 </body>
 </html>
